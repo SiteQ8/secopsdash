@@ -5,7 +5,7 @@ Thank you to everyone who has contributed to SecOpsDash! 🎉
 ## Core Team
 
 ### Project Lead
-- **Ali Al-Mutairi** [@SiteQ8](https://github.com/SiteQ8)
+- **Ali AlEnezi** [@SiteQ8](https://github.com/SiteQ8)
   - Creator & Lead Developer
   - Security Architect at National Bank of Kuwait
   - SANS Certified (SEC530)
