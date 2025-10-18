@@ -282,7 +282,7 @@ SecOpsDash is **MIT licensed**. You are free to use, modify, and distribute this
 ```
 MIT License
 
-Copyright (c) 2025 Ali Al-Mutairi (SiteQ8)
+Copyright (c) 2025 Ali AlEnezi (SiteQ8)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -301,7 +301,6 @@ Built with ❤️ by security professionals, for security professionals.
 
 Special thanks to:
 - The amazing open-source community
-- [TailAdmin](https://github.com/TailAdmin) for the admin template inspiration
 - All our [contributors](https://github.com/SiteQ8/secopsdash/graphs/contributors)
 - Kuwait cybersecurity community
 
@@ -310,11 +309,8 @@ Special thanks to:
 ## 🔗 Links
 
 - 🌐 **Website:** [secopsdash.3li.info](https://secopsdash.3li.info)
-- 📖 **Documentation:** [docs.secopsdash.io](https://docs.secopsdash.io)
-- 💬 **Discord:** [Join our community](https://discord.gg/secopsdash)
-- 🐦 **Twitter:** [@secopsdash](https://twitter.com/secopsdash)
-- 📧 **Email:** ali@3li.info
-- 🌍 **Author:** [Ali Al-Mutairi](https://3li.info) | [LinkedIn](https://linkedin.com/in/sitedali)
+- 📧 **Email:** site@hotmail.com
+- 🌍 **Author:** [Ali AlEnezi](https://3li.info) | [LinkedIn](https://www.linkedin.com/in/alenizi/)
 
 ---
 
