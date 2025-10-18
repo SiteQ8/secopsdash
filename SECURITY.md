@@ -17,7 +17,7 @@ If you discover a security vulnerability in SecOpsDash, please report it to us p
 
 ### How to Report
 
-1. **Email**: Send details to **ali@3li.info** with the subject line "SecOpsDash Security Vulnerability"
+1. **Email**: Send details to **site@hotmail.com** with the subject line "SecOpsDash Security Vulnerability"
 
 2. **Include**:
    - Type of vulnerability
@@ -138,9 +138,7 @@ SecOpsDash is designed with compliance in mind:
 
 For security-related questions:
 
-- 📧 **Email**: ali@3li.info
-- 💬 **Discord**: Join our [community](https://discord.gg/secopsdash)
-- 🐦 **Twitter**: [@secopsdash](https://twitter.com/secopsdash)
+- 📧 **Email**: site@hotmail.com
 
 ## Acknowledgments
 
