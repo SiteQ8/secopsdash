@@ -164,37 +164,12 @@ Built with modern web technologies:
 
 ---
 
-## 🔌 Plugin System
-
-Extend SecOpsDash with custom widgets and integrations:
-
-```typescript
-// Example plugin structure
-import { Plugin } from '@secopsdash/types';
-
-export const MyCustomWidget: Plugin = {
-  name: 'custom-widget',
-  version: '1.0.0',
-  component: CustomWidgetComponent,
-  config: {
-    refreshInterval: 60000,
-    dataSource: 'api.example.com'
-  }
-};
-```
-
-See [Plugin Development Guide](docs/plugins.md) for details.
-
----
-
 ## 🌍 Internationalization
 
 SecOpsDash supports multiple languages:
 
 - 🇬🇧 English (default)
 - 🇰🇼 Arabic (العربية) **--Coming Soon--**
-
-To add a new language, see [i18n Guide](docs/i18n.md).
 
 ---
 
