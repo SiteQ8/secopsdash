@@ -10,7 +10,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Made with Love](https://img.shields.io/badge/Made%20with-❤️-red.svg)](https://github.com/SiteQ8)
 
-[🚀 Live Demo](https://secopsdash.3li.info)
+[🚀 Live Demo](siteq8.github.io/secopsdash/)
 
 </div>
 
