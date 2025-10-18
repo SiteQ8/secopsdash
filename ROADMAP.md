@@ -28,9 +28,7 @@ This roadmap outlines the planned features and improvements for SecOpsDash. Our 
 - [x] Real-time animations
 - [x] Demo data with realistic scenarios
 - [x] Basic plugin architecture
-- [x] English & Arabic language support
 - [x] Export functionality (PDF/CSV)
-- [x] GitHub Pages deployment
 - [x] Docker support
 - [x] Comprehensive documentation
 
@@ -42,6 +40,8 @@ This roadmap outlines the planned features and improvements for SecOpsDash. Our 
 **Focus**: Connect SecOpsDash to real data sources
 
 ### Planned Features
+- [ ] English & Arabic language support
+
 
 #### SIEM Integrations
 - [ ] **Splunk Connector**
