@@ -139,9 +139,8 @@ Check that:
 
 ### Need more help?
 
-- 💬 [Discord](https://discord.gg/secopsdash)
 - 💡 [GitHub Discussions](https://github.com/SiteQ8/secopsdash/discussions)
-- 📧 Email: ali@3li.info
+- 📧 Email: Site@hotmail.com
 
 ## Development Tips
 
@@ -187,11 +186,6 @@ src/
 4. ❓ Read the [FAQ](FAQ.md)
 5. ⭐ Star the repo if you like it!
 
-## Join the Community
-
-- 💬 [Discord](https://discord.gg/secopsdash) - Chat with the community
-- 🐦 [Twitter/X](https://twitter.com/secopsdash) - Latest updates
-- 📧 Newsletter - Coming soon!
 
 ---
 
@@ -199,4 +193,4 @@ src/
 
 If you found this helpful, please ⭐ star the repo and share with others!
 
-Questions? Join our [Discord](https://discord.gg/secopsdash) or open a [Discussion](https://github.com/SiteQ8/secopsdash/discussions).
+Questions? open a [Discussion](https://github.com/SiteQ8/secopsdash/discussions).
