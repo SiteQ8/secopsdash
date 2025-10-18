@@ -121,7 +121,7 @@ Yes! SecOpsDash prioritizes security:
 
 ### How do I report a security vulnerability?
 
-Please email security issues to **ali@3li.info** with "SecOpsDash Security Vulnerability" in the subject. See our [Security Policy](SECURITY.md) for details.
+Please email security issues to **Site@hotmail.com** with "SecOpsDash Security Vulnerability" in the subject. See our [Security Policy](SECURITY.md) for details.
 
 ### Is it compliant with regulations?
 
@@ -205,9 +205,8 @@ Yes! Under the MIT license, you can:
 
 ### How do I get help?
 
-- 💬 **Discord**: [Join our community](https://discord.gg/secopsdash)
 - 💡 **GitHub Discussions**: Ask questions
-- 📧 **Email**: ali@3li.info
+- 📧 **Email**: Site@hotmail.com
 - 🐛 **Issues**: Report bugs on GitHub
 
 ### How can I contribute?
@@ -222,9 +221,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for:
 ### Is there a community?
 
 Yes! Join us:
-- **Discord**: Real-time chat
 - **GitHub Discussions**: Q&A and ideas
-- **Twitter/X**: [@secopsdash](https://twitter.com/secopsdash)
 - **LinkedIn**: Updates and articles
 
 ### Can I sponsor the project?
@@ -294,7 +291,7 @@ docker-compose up
 
 ### Need more help?
 
-Visit our [GitHub Discussions](https://github.com/SiteQ8/secopsdash/discussions) or [Discord](https://discord.gg/secopsdash).
+Visit our [GitHub Discussions](https://github.com/SiteQ8/secopsdash/discussions).
 
 ## Future Plans
 
@@ -318,8 +315,6 @@ No paid version is planned. SecOpsDash will always be free and open source. We m
 
 - ⭐ Star the GitHub repo
 - 👀 Watch the repo for releases
-- 🐦 Follow [@secopsdash](https://twitter.com/secopsdash)
-- 💬 Join our [Discord](https://discord.gg/secopsdash)
 - 📧 Subscribe to our newsletter (coming soon)
 
 ---
@@ -327,7 +322,6 @@ No paid version is planned. SecOpsDash will always be free and open source. We m
 ## Still have questions?
 
 - 💡 [Open a Discussion](https://github.com/SiteQ8/secopsdash/discussions)
-- 💬 [Join Discord](https://discord.gg/secopsdash)
-- 📧 Email: ali@3li.info
+- 📧 Email: site@hotmail.com
 
 **We're here to help!** 🛡️
