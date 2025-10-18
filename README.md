@@ -18,7 +18,7 @@
 
 ## 🎯 What is SecOpsDash?
 
-**SecOpsDash** is a beautiful, modern, and **completely free** security operations dashboard designed for SOC analysts, security professionals, and cybersecurity teams. Think of it as "Grafana for Security Teams" but simpler, more focused, and with a stunning UI that doesn't make your eyes bleed.
+**SecOpsDash** is a modern and **free** security operations dashboard designed for SOC analysts, security professionals, and cybersecurity teams. Think of it as "Grafana for Security Teams" but simpler, more focused, and with a stunning UI that doesn't make your eyes bleed.
 
 ### Why SecOpsDash?
 
