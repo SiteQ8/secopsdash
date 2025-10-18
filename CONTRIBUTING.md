@@ -268,7 +268,6 @@ These are typically:
 - 🐛 Bug fixes and polish
 
 ### Community:
-- 💬 Answering questions in Discord
 - 📝 Writing blog posts and tutorials
 - 🎥 Creating video content
 - 🌍 Translations
@@ -292,7 +291,6 @@ Contributors are recognized in several ways:
 
 - Listed in [CONTRIBUTORS.md](CONTRIBUTORS.md)
 - Mentioned in release notes
-- Special role in Discord server
 - Featured in social media shoutouts
 - Priority support for your issues
 
@@ -300,8 +298,7 @@ Contributors are recognized in several ways:
 
 Need help with your contribution?
 
-- 💬 **Discord**: Join our [Discord server](https://discord.gg/secopsdash)
-- 📧 **Email**: ali@3li.info
+- 📧 **Email**: site@hotmail.com
 - 💡 **Discussions**: Use GitHub Discussions for questions
 - 🐛 **Issues**: Create an issue for bugs or problems
 
@@ -329,7 +326,6 @@ Your contributions make SecOpsDash better for everyone. Whether it's:
 - 🐛 Fixing a bug
 - ✨ Adding a feature
 - 📚 Improving documentation
-- 💬 Helping in Discord
 - ⭐ Starring the repo
 - 🐦 Sharing on social media
 
