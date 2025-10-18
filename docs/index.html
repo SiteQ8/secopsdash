@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecOpsDash - Security Operations Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="theme-dark">
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>SecOpsDash</span>
+                </div>
+            </div>
+            
+            <div class="nav-center">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search threats, alerts, CVEs...">
+                </div>
+            </div>
+            
+            <div class="nav-right">
+                <div class="datetime" id="datetime"></div>
+                
+                <div class="theme-switcher">
+                    <button class="theme-btn" data-theme="dark" title="Dark Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="theme-btn" data-theme="light" title="Light Theme">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                    <button class="theme-btn" data-theme="cyberpunk" title="Cyberpunk Theme">
+                        <i class="fas fa-rocket"></i>
+                    </button>
+                </div>
+                
+                <button class="notification-btn" id="notificationBtn">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </button>
+                
+                <div class="user-profile">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%230EA5E9'/%3E%3Ctext x='16' y='20' text-anchor='middle' fill='white' font-family='Arial' font-size='12' font-weight='bold'%3ESA%3C/text%3E%3C/svg%3E" alt="User">
+                    <span>Security Analyst</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item active" data-view="executive">
+                <i class="fas fa-tachometer-alt"></i>
+                <span>Executive Dashboard</span>
+            </a>
+            <a href="#" class="nav-item" data-view="threat-intel">
+                <i class="fas fa-globe"></i>
+                <span>Threat Intelligence</span>
+            </a>
+            <a href="#" class="nav-item" data-view="vulnerability">
+                <i class="fas fa-bug"></i>
+                <span>Vulnerability Management</span>
+            </a>
+            <a href="#" class="nav-item" data-view="compliance">
+                <i class="fas fa-clipboard-check"></i>
+                <span>Compliance Center</span>
+            </a>
+            <a href="#" class="nav-item" data-view="incident">
+                <i class="fas fa-exclamation-triangle"></i>
+                <span>Incident Response</span>
+            </a>
+            <a href="#" class="nav-item" data-view="settings">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Date Range Selector -->
+        <div class="date-range-selector">
+            <select id="dateRange">
+                <option value="24h">Last 24 Hours</option>
+                <option value="7d" selected>Last 7 Days</option>
+                <option value="30d">Last 30 Days</option>
+                <option value="90d">Last 90 Days</option>
+            </select>
+            <button class="refresh-btn" id="refreshBtn">
+                <i class="fas fa-sync-alt"></i>
+                Refresh
+            </button>
+        </div>
+
+        <!-- Executive Dashboard -->
+        <div class="dashboard-view" id="executive-view">
+            <h1 class="dashboard-title">Executive Dashboard</h1>
+            
+            <!-- Key Metrics Row -->
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <h3>Security Posture</h3>
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="metric-value">
+                        <span class="value" id="securityPosture">87</span>
+                        <span class="unit">/100</span>
+                    </div>
+                    <div class="metric-trend positive">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>+3% this week</span>
+                    </div>
+                </div>
+                
+                <div class="metric-card critical">
+                    <div class="metric-header">
+                        <h3>Active Threats</h3>
+                        <i class="fas fa-exclamation-triangle pulse"></i>
+                    </div>
+                    <div class="metric-value">
+                        <span class="value" id="activeThreats">3</span>
+                    </div>
+                    <div class="metric-trend">
+                        <span>Requires attention</span>
+                    </div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <h3>Open Incidents</h3>
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <div class="metric-value">
+                        <span class="value" id="openIncidents">7</span>
+                    </div>
+                    <div class="metric-trend">
+                        <span>23 closed today</span>
+                    </div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <h3>Compliance Score</h3>
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="metric-value">
+                        <span class="value" id="complianceScore">92</span>
+                        <span class="unit">%</span>
+                    </div>
+                    <div class="compliance-bar">
+                        <div class="compliance-progress" style="width: 92%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Real-time Alerts Feed -->
+            <div class="alerts-section">
+                <h2>Real-time Alerts</h2>
+                <div class="alerts-feed" id="alertsFeed"></div>
+            </div>
+
+            <!-- Charts Section -->
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <h3>Threats Over Time</h3>
+                    <div class="chart-container">
+                        <canvas id="threatsTimelineChart" width="400" height="200"></canvas>
+                    </div>
+                </div>
+                
+                <div class="chart-card">
+                    <h3>Threat Types Distribution</h3>
+                    <div class="chart-container">
+                        <canvas id="threatTypesChart" width="400" height="200"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Performance Metrics -->
+            <div class="performance-grid">
+                <div class="performance-card">
+                    <h3>Mean Time to Respond</h3>
+                    <div class="performance-value">
+                        <span class="value">45</span>
+                        <span class="unit">minutes</span>
+                    </div>
+                    <div class="performance-trend positive">
+                        <i class="fas fa-arrow-down"></i>
+                        <span>-5 min from last week</span>
+                    </div>
+                </div>
+                
+                <div class="performance-card">
+                    <h3>Mean Time to Detect</h3>
+                    <div class="performance-value">
+                        <span class="value">12</span>
+                        <span class="unit">minutes</span>
+                    </div>
+                    <div class="performance-trend positive">
+                        <i class="fas fa-arrow-down"></i>
+                        <span>-2 min from last week</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vulnerabilities Table -->
+            <div class="vulnerabilities-section">
+                <h2>Top Vulnerabilities</h2>
+                <div class="table-container">
+                    <table class="vulnerabilities-table">
+                        <thead>
+                            <tr>
+                                <th>CVE ID</th>
+                                <th>Severity</th>
+                                <th>CVSS</th>
+                                <th>Affected Assets</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="vulnerabilitiesTable"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Dashboard Views -->
+        <div class="dashboard-view" id="threat-intel-view" style="display: none;">
+            <h1 class="dashboard-title">Threat Intelligence</h1>
+            <div class="coming-soon">
+                <i class="fas fa-globe"></i>
+                <h2>Threat Intelligence Dashboard</h2>
+                <p>Advanced threat intelligence features coming soon...</p>
+            </div>
+        </div>
+
+        <div class="dashboard-view" id="vulnerability-view" style="display: none;">
+            <h1 class="dashboard-title">Vulnerability Management</h1>
+            <div class="coming-soon">
+                <i class="fas fa-bug"></i>
+                <h2>Vulnerability Management</h2>
+                <p>Comprehensive vulnerability tracking coming soon...</p>
+            </div>
+        </div>
+
+        <div class="dashboard-view" id="compliance-view" style="display: none;">
+            <h1 class="dashboard-title">Compliance Center</h1>
+            <div class="coming-soon">
+                <i class="fas fa-clipboard-check"></i>
+                <h2>Compliance Center</h2>
+                <p>Compliance monitoring and reporting coming soon...</p>
+            </div>
+        </div>
+
+        <div class="dashboard-view" id="incident-view" style="display: none;">
+            <h1 class="dashboard-title">Incident Response</h1>
+            <div class="coming-soon">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h2>Incident Response</h2>
+                <p>Incident management and workflow coming soon...</p>
+            </div>
+        </div>
+
+        <div class="dashboard-view" id="settings-view" style="display: none;">
+            <h1 class="dashboard-title">Settings</h1>
+            <div class="coming-soon">
+                <i class="fas fa-cog"></i>
+                <h2>Settings</h2>
+                <p>Dashboard configuration options coming soon...</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Notification Panel -->
+    <div class="notification-panel" id="notificationPanel">
+        <div class="notification-header">
+            <h3>Notifications</h3>
+            <button class="close-notifications" id="closeNotifications">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="notifications-list">
+            <div class="notification-item critical">
+                <div class="notification-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="notification-content">
+                    <h4>Ransomware Detection</h4>
+                    <p>Critical threat detected on PROD-DB-01</p>
+                    <span class="notification-time">2 minutes ago</span>
+                </div>
+            </div>
+            <div class="notification-item high">
+                <div class="notification-icon">
+                    <i class="fas fa-user-lock"></i>
+                </div>
+                <div class="notification-content">
+                    <h4>Brute Force Attack</h4>
+                    <p>VPN gateway under attack from Russia</p>
+                    <span class="notification-time">15 minutes ago</span>
+                </div>
+            </div>
+            <div class="notification-item medium">
+                <div class="notification-icon">
+                    <i class="fas fa-terminal"></i>
+                </div>
+                <div class="notification-content">
+                    <h4>Suspicious PowerShell</h4>
+                    <p>Base64 encoded command executed</p>
+                    <span class="notification-time">28 minutes ago</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alert Detail Modal -->
+    <div class="modal" id="alertModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Alert Details</h2>
+                <button class="modal-close" id="modalClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Alert details will be populated here -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary">Investigate</button>
+                <button class="btn btn-secondary">Assign</button>
+                <button class="btn btn-outline">Mark as False Positive</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner">
+            <i class="fas fa-shield-alt fa-spin"></i>
+            <p>Loading SecOpsDash...</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
