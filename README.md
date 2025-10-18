@@ -28,7 +28,6 @@
 ✅ **Blazing Fast** - Loads in under 2 seconds, real-time updates  
 ✅ **Privacy First** - No telemetry, no data collection, fully open source  
 ✅ **Easy to Customize** - Plugin architecture and theme system  
-✅ **MENA/Kuwait Ready** - Built-in CBK compliance tracking and Arabic support  
 
 ---
 
@@ -193,7 +192,7 @@ See [Plugin Development Guide](docs/plugins.md) for details.
 SecOpsDash supports multiple languages:
 
 - 🇬🇧 English (default)
-- 🇰🇼 Arabic (العربية)
+- 🇰🇼 Arabic (العربية) **--Coming Soon--**
 
 To add a new language, see [i18n Guide](docs/i18n.md).
 
