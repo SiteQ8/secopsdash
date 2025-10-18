@@ -7,9 +7,7 @@ Thank you to everyone who has contributed to SecOpsDash! 🎉
 ### Project Lead
 - **Ali AlEnezi** [@SiteQ8](https://github.com/SiteQ8)
   - Creator & Lead Developer
-  - Security Architect at National Bank of Kuwait
-  - SANS Certified (SEC530)
-
+  - 
 ## Contributors
 
 <!-- This section will be automatically updated -->
@@ -50,7 +48,7 @@ Help translate SecOpsDash to more languages.
 Create themes, improve UI/UX, or design assets.
 
 ### 💬 Community Helpers
-Answer questions on Discord, GitHub Discussions, or social media.
+Answer questions on GitHub Discussions or social media.
 
 ### 📢 Advocates
 Write blog posts, create videos, or speak about SecOpsDash.
@@ -59,7 +57,6 @@ Write blog posts, create videos, or speak about SecOpsDash.
 
 ### 🌟 Star Contributor
 - 10+ merged PRs or significant contributions
-- Special badge in Discord
 - Listed in release notes
 - Profile featured on website
 
@@ -140,7 +137,6 @@ Sponsors help keep this project alive and growing!
 - Logo on README and website
 - Priority feature requests
 - Early access to new features
-- Private Discord channel
 
 **Enterprise Sponsors ($1000+/month)**
 - Prominent logo placement
